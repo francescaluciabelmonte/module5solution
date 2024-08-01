@@ -1,0 +1,142 @@
+/* Reset dei margini e padding di default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stili globali */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.navbar .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Home Section */
+.home {
+    background: url('https://via.placeholder.com/1920x800?text=Benvenuti') no-repeat center center;
+    background-size: cover;
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+}
+.home h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.home p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.home button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.home button:hover {
+    background-color: #0056b3;
+}
+
+/* About Section */
+.about {
+    background: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.about p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.gallery-item {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+    background: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+}
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contact form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.contact form button:hover {
+    background-color: #0056b3;
+}
